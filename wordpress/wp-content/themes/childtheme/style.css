@@ -3,7 +3,37 @@
 Theme Name: Child Theme
 Template: astra
 Author: pernillestrate
-Version: 1.0.6
+Version: 1.0.7
 Description: Stylish Child Theme based on astra
 
 */
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+}
+
+img {
+    max-width: 30%;
+}
+
+.menu-toggle,
+button,
+.ast-button,
+.ast-custom-button,
+.button,
+input#submit,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    color: #ffffff;
+    border-color: #0274be;
+    background-color: #02163B;
+}
