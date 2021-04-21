@@ -13,32 +13,87 @@
  * @since 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
-}
+
 
 get_header(); ?>
 
-<?php if ( astra_page_layout() == 'left-sidebar' ) : ?>
+<main>
+    <nav id="filtrering"></nav>
+    <section id="liste" class="podcastcontainer"></section>
+</main>
 
-	<?php get_sidebar(); ?>
+<template>
+    <article class="radio">
+        <img src="" alt="" class="billede">
+        <h3 class="titel"></h3>
+        <p class="kort_beskrivelse"></p>
 
-<?php endif ?>
+    </article>
+</template>
 
-	<div id="primary" <?php astra_primary_class(); ?>>
+<script>
+    let podcasts;
+    let categories;
+    let filterPodcast = "alle";
+    const dbUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/podcast?per_page=100";
+    const catUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/categories";
 
-		<?php astra_primary_content_top(); ?>
+    async function getJson() {
+        const data = await fetch(dbUrl);
+        const catdata = await fetch(catUrl);
+        podcasts = await data.json();
+        categories = await catdata.json();
+        console.log(podcasts);
+        console.log(categories);
+        visPodcasts();
+        opretKnapper();
+    }
 
-		<?php astra_content_page_loop(); ?>
+    function opretKnapper() {
+        categories.forEach(cat => {
+            document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+        })
 
-		<?php astra_primary_content_bottom(); ?>
+        addEventListenersToButtons();
+    }
 
-	</div><!-- #primary -->
+    function addEventListenersToButtons() {
+        document.querySelectorAll("#filtrering button").forEach(elm => {
+            elm.addEventListener("click", filtrering);
+        })
+    };
 
-<?php if ( astra_page_layout() == 'right-sidebar' ) : ?>
+    function filtrering() {
+        filterPodcast = this.dataset.podcast;
+        console.log(filterPodcast);
 
-	<?php get_sidebar(); ?>
+        visPodcasts();
+    }
 
-<?php endif ?>
+
+    function visPodcasts() {
+        let temp = document.querySelector("template");
+        let container = document.querySelector(".podcastcontainer")
+        container.innerHTML = "";
+        podcasts.forEach(podcast => {
+            if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcast))) {
+                let klon = temp.cloneNode(true).content;
+                klon.querySelector("h3").textContent = podcast.title.rendered;
+                klon.querySelector("img").src = podcast.billede.guid;
+                klon.querySelector("article").addEventListener("click", () => {
+                    location.href = podcast.link;
+                })
+                container.appendChild(klon);
+            }
+        })
+
+    }
+
+    getJson();
+
+</script>
+
+
+
 
 <?php get_footer(); ?>
