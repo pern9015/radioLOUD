@@ -29,9 +29,15 @@ get_header(); ?>
 
     <main>
         <nav id="filtrering"></nav>
-        <section id="liste" class="podcastcontainer"></section>
-    </main>
+        <header>
+            <h1>Alle Podcasts</h1>
+        </header>
+        <section id="liste" class="podcastcontainer" style="display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;margin: 0px 200px;"></section>
 
+
+
+    </main>
     <template>
         <article class="radio">
             <img src="" alt="" class="billede">
@@ -42,6 +48,7 @@ get_header(); ?>
     </template>
 
     <script>
+        const header = document.querySelector("header h1");
         let podcasts;
         let categories;
         let filterPodcast = "alle";
@@ -78,6 +85,8 @@ get_header(); ?>
             console.log(filterPodcast);
 
             visPodcasts();
+
+            header.textContent = this.textContent;
         }
 
 
@@ -89,7 +98,7 @@ get_header(); ?>
                 if (filterPodcast == "alle" || podcast.categories.includes(parseInt(filterPodcast))) {
                     let klon = temp.cloneNode(true).content;
                     klon.querySelector("h3").textContent = podcast.title.rendered;
-                    klon.querySelector("img").src = podcast.billede.guid;
+                    klon.querySelector(".billede").src = podcast.billede.guid;
                     klon.querySelector(".kort_beskrivelse").textContent = podcast.kort_beskrivelse;
                     klon.querySelector("article").addEventListener("click", () => {
                         location.href = podcast.link;

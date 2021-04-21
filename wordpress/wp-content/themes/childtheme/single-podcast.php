@@ -7,7 +7,7 @@ get_header(); ?>
 <main id="main" class="site-main">
 
     <section class="first_section">
-        <img src="Asset_13.svg" alt="lyd">
+        <img src="assets/images/Asset_13.svg" alt="lyd">
     </section>
     <article class="radio" id="podcasts">
         <img src="" alt="" class="billede_single">
