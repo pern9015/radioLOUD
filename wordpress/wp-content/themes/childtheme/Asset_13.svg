@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="727" height="496" viewBox="0 0 727 496">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #db083a;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path id="Rectangle_428" data-name="Rectangle 428" class="cls-1" d="M31,42h0A31,31,0,0,1,62,73V399a31,31,0,0,1-31,31h0A31,31,0,0,1,0,399V73A31,31,0,0,1,31,42Z"/>
+      <path id="Rectangle_424" data-name="Rectangle 424" class="cls-1" d="M411,12h0a31,31,0,0,1,31,31V421a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V43A31,31,0,0,1,411,12Z"/>
+      <path id="Rectangle_427" data-name="Rectangle 427" class="cls-1" d="M126,0h0a31,31,0,0,1,31,31V433a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V31A31,31,0,0,1,126,0Z"/>
+      <path id="Rectangle_421" data-name="Rectangle 421" class="cls-1" d="M506,79h0a31,31,0,0,1,31,31V362a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V110A31,31,0,0,1,506,79Z"/>
+      <path id="Rectangle_426" data-name="Rectangle 426" class="cls-1" d="M221,63h0a31,31,0,0,1,31,31V465a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V94A31,31,0,0,1,221,63Z"/>
+      <path id="Rectangle_422" data-name="Rectangle 422" class="cls-1" d="M601,42h0a31,31,0,0,1,31,31V399a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V73A31,31,0,0,1,601,42Z"/>
+      <path id="Rectangle_425" data-name="Rectangle 425" class="cls-1" d="M316,120h0a31,31,0,0,1,31,31V399a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V151A31,31,0,0,1,316,120Z"/>
+      <path id="Rectangle_423" data-name="Rectangle 423" class="cls-1" d="M696,79h0a31,31,0,0,1,31,31V362a31,31,0,0,1-31,31h0a31,31,0,0,1-31-31V110A31,31,0,0,1,696,79Z"/>
+    </g>
+  </g>
+</svg>
