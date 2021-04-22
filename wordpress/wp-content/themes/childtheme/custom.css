@@ -1,0 +1,40 @@
+.ast-separate-container {
+    background-color: #FEEFF2;
+}
+
+button.filter {
+    background-color: #02163B;
+    border-radius: 0px;
+    margin-left: 10px;
+
+}
+
+button.filter:hover {
+    background: #FF0030;
+}
+
+button.filter:active {
+    background: #FF0030;
+}
+
+
+#liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin: 0px 200px;
+}
+
+img.billede {
+    height: 350px;
+    width: 350px;
+}
+
+h1.type {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.valgt {
+    background-color: red;
+}

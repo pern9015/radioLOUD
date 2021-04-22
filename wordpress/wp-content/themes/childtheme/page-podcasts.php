@@ -27,11 +27,17 @@ get_header(); ?>
 
     </div><!-- #primary -->
 
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    </head>
     <main>
         <nav id="filtrering"></nav>
         <header>
-            <h1>Alle Podcasts</h1>
+            <h1 class="type" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">Alle Podcasts</h1>
         </header>
+
+
         <section id="liste" class="podcastcontainer" style="display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;margin: 0px 200px;"></section>
 
@@ -40,7 +46,8 @@ get_header(); ?>
     </main>
     <template>
         <article class="radio">
-            <img src="" alt="" class="billede">
+            <img src="" alt="" class="billede" style="height: 350px;
+    width: 350px;">
             <h3 class="titel"></h3>
             <p class="kort_beskrivelse"></p>
 
@@ -68,7 +75,7 @@ get_header(); ?>
 
         function opretKnapper() {
             categories.forEach(cat => {
-                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+                document.querySelector("#filtrering").innerHTML += `<button class="filter valgt" data-podcast="${cat.id}">${cat.name}</button>`
             })
 
             addEventListenersToButtons();
@@ -84,9 +91,14 @@ get_header(); ?>
             filterPodcast = this.dataset.podcast;
             console.log(filterPodcast);
 
+            document.querySelector(".valgt").classList.remove("valgt");
+            this.classList.add("valgt")
+
             visPodcasts();
 
             header.textContent = this.textContent;
+
+
         }
 
 
