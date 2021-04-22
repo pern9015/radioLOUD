@@ -30,6 +30,8 @@ get_header(); ?>
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/custom.css">
     </head>
     <main>
         <nav id="filtrering"></nav>
@@ -75,7 +77,7 @@ get_header(); ?>
 
         function opretKnapper() {
             categories.forEach(cat => {
-                document.querySelector("#filtrering").innerHTML += `<button class="filter valgt" data-podcast="${cat.id}">${cat.name}</button>`
+                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
             })
 
             addEventListenersToButtons();
