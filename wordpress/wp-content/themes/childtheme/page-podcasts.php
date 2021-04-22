@@ -48,11 +48,12 @@ get_header(); ?>
     </main>
     <template>
         <article class="radio">
-            <img src="" alt="" class="billede" style="height: 350px;
+            <img src="" alt="" class="billede myDIV" style="height: 350px;
     width: 350px;">
-            <h3 class="titel"></h3>
-            <p class="kort_beskrivelse"></p>
-
+            <div class="hide">
+                <h3 class="titel"></h3>
+                <p class="kort_beskrivelse"></p>
+            </div>
         </article>
     </template>
 
@@ -92,9 +93,6 @@ get_header(); ?>
         function filtrering() {
             filterPodcast = this.dataset.podcast;
             console.log(filterPodcast);
-
-            document.querySelector(".valgt").classList.remove("valgt");
-            this.classList.add("valgt")
 
             visPodcasts();
 

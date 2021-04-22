@@ -66,15 +66,26 @@ input.search-submit {
 .billede {}
 
 .billede:hover {
+    opacity: 0.2;
     transform: scale(1.04);
     transition: .5s ease;
 }
 
-h3.title {
-    opacity: 0;
+.hide {
+    display: none;
 }
 
-/*dette gør at når man holder musen henover billedet så vises navnet på drinken*/
-article:hover .title {
-    opacity: 1;
+.myDIV:hover + .hide {
+    display: block;
+}
+
+.hide {
+    position: relative;
+    padding-left: 0vw;
+    margin-left: 180px;
+    /*    padding-bottom: 22vw;*/
+    margin-top: -180px;
+    margin-bottom: 0px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
 }
