@@ -89,3 +89,24 @@ input.search-submit {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
 }
+
+
+
+#first_section {
+    background-color: #02163B;
+    margin-left: -1000px;
+    margin-right: -1000px;
+    margin-bottom: 200px;
+    height: 30vw;
+    object-fit: cover;
+}
+
+.lydbolge {
+    margin-top: -640px;
+    margin-left: -346px;
+    margin-right: 220px;
+}
+
+img.billede_single {
+    margin-top: -500px;
+}
