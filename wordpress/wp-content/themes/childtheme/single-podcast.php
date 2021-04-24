@@ -14,22 +14,30 @@ get_header(); ?>
     </section>
     <article class="radio" id="podcasts">
         <img src="" alt="" class="lydbolge">
-        <img src="" alt="" class="billede_single">
-        <h3 class="title"></h3>
-        <p class="lang_beskrivelse"></p>
+        <img src="" alt="" class="billede_single" style="height: 500px;
+    width: 500px;">
+        <h1 class="title_single" style="font-family: 'Montserrat', sans-serif;
+    font-weight: 900;"></h1>
+        <p class="lang_beskrivelse_single"></p>
     </article>
 
-    <section id="episoder">
-        <template>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <h2></h2>
-                    <p class="beskrivelse"></p>
-                    <a href="">Læs mere</a>
-                </div>
-            </article>
-        </template>
+    <div class="baggrund">
+        <h2 class="flere_episoder">Flere episoder</h2>
+        <section id="episoder">
+            <template>
+                <article class="article_episode">
+                    <img src="" alt="" class="billede_episode">
+                    <div>
+                        <h3 class="episode_title"></h3>
+                        <p class="beskrivelse"></p>
+                        <a href="">Læs mere</a>
+                    </div>
+                </article>
+            </template>
+        </section>
+    </div>
+    <section id="third_section">
+        <br>
     </section>
 </main>
 
@@ -43,6 +51,8 @@ get_header(); ?>
     const episodeUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/episoder?per_page=100";
 
     const container = document.querySelector("#episoder");
+
+    console.log("container: ", container);
 
     async function getJson() {
         const data = await fetch(dbUrl);
@@ -63,8 +73,8 @@ get_header(); ?>
         console.log(podcast.title.rendered);
         document.querySelector(".lydbolge").src = podcast.lyd.guid;
         document.querySelector(".billede_single").src = podcast.billede.guid;
-        document.querySelector(".lang_beskrivelse").textContent = podcast.lang_beskrivelse;
-        document.querySelector(".title").textContent = podcast.title.rendered;
+        document.querySelector(".lang_beskrivelse_single").textContent = podcast.lang_beskrivelse;
+        document.querySelector(".title_single").textContent = podcast.title.rendered;
     }
 
     function visEpisoder() {
@@ -76,8 +86,9 @@ get_header(); ?>
 
                 console.log("loop kører id :", aktuelpodcast);
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").textContent = episode.title.rendered;
-
+                klon.querySelector("h3").textContent = episode.title.rendered;
+                klon.querySelector("img").src = episode.billede.guid;
+                console.log("episode.title.rendered: ", episode.title.rendered);
                 klon.querySelector(".beskrivelse").innerHTML = episode.content.rendered;
                 klon.querySelector("article").addEventListener("click", () => {
                     location.href = episode.link;

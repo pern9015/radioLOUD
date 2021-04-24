@@ -63,11 +63,14 @@ input.search-submit {
 
 
 
-.billede {}
+.billede {
+    cursor: pointer;
+}
 
 .billede:hover {
+    cursor: pointer;
     opacity: 0.2;
-    transform: scale(1.04);
+    /*    transform: scale(1.04);*/
     transition: .5s ease;
 }
 
@@ -79,18 +82,26 @@ input.search-submit {
     display: block;
 }
 
+
+
 .hide {
     position: relative;
-    padding-left: 0vw;
-    margin-left: 180px;
-    /*    padding-bottom: 22vw;*/
-    margin-top: -180px;
-    margin-bottom: 0px;
+    padding-left: 1px;
+    margin-left: 167px;
+    /* padding-bottom: 22vw; */
+    margin-top: -44px;
+    margin-bottom: -80px;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
+    margin-right: -168px;
+    background-color: white;
 }
 
 
+
+
+
+/*singleview*/
 
 #first_section {
     background-color: #02163B;
@@ -109,4 +120,107 @@ input.search-submit {
 
 img.billede_single {
     margin-top: -500px;
+}
+
+h1.title_single {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+p.lang_beskrivelse_single {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 40px;
+}
+
+img.billede_episode {
+    height: 350px;
+    width: 350px;
+}
+
+h2.flere_episoder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+#episoder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    color: white;
+}
+
+.baggrund {
+    background-color: #02163B;
+    border-radius: 0px;
+    margin-left: -120px;
+    margin-right: -140px;
+    padding-left: 150px;
+    padding-right: 100px;
+    color: white;
+}
+
+.episode_title {
+    color: white;
+}
+
+.article_episode {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+#third_section {
+    background-color: #FEEFF2;
+    margin-left: -1000px;
+    margin-right: -1000px;
+    margin-bottom: 0px;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.site-primary-footer-wrap[data-section="section-primary-footer-builder"] {
+    display: grid;
+    margin-top: 40px;
+}
+
+
+
+
+
+/*episodeview*/
+#first_section_episode {
+    background-color: #02163B;
+    margin-left: -1000px;
+    margin-right: -1260px;
+    margin-bottom: 200px;
+    height: 30vw;
+    object-fit: cover;
+}
+
+
+
+
+/*searchview*/
+div.sidebar-main {
+    display: none;
+}
+
+.ast-separate-container .ast-archive-description,
+.ast-separate-container .ast-author-box {
+    background-color: #02163B;
+    padding-bottom: 20px;
+    border-bottom: 0;
+}
+
+.ast-archive-description .ast-archive-title {
+    font-size: 40px;
+    font-size: 2.6666666666667rem;
+    color: white;
 }
