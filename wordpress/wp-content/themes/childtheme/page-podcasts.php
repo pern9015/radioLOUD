@@ -35,6 +35,7 @@ get_header(); ?>
     </head>
     <main>
         <nav id="filtrering"></nav>
+
         <header>
             <h1 class="type" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">Alle</h1>
         </header>

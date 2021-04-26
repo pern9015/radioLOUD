@@ -222,7 +222,28 @@ h2.flere_episoder {
 }
 
 
+/*knapper til tjenester*/
 
+a img .loud_knap {
+    height: 150px;
+    width: 150px;
+}
+
+    {
+    height: 150px;
+    width: 150px;
+}
+
+a img .loud_knap {
+    height: 150px;
+    width: 150px;
+}
+
+
+a img .apple_knap {
+    height: 150px;
+    width: 150px;
+}
 
 /*searchview*/
 div.sidebar-main {

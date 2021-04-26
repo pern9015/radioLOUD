@@ -19,6 +19,23 @@ get_header(); ?>
         <h1 class="title_single" style="font-family: 'Montserrat', sans-serif;
     font-weight: 900;"></h1>
         <p class="lang_beskrivelse_single"></p>
+
+        <a class="loud">
+            <img class="loud_knap" src="loud_logo.jpeg" alt="loud_svg">
+        </a>
+
+        <a href="#" class="spotify">
+            <img class="spotify_knap" src="spotify.png" alt="spotify_svg">
+        </a>
+
+        <a href="#" class="apple">
+            <img class="apple_knap" src="apple_podcast.png" alt="apple_svg">
+        </a>
+
+        <a href="#" class="speaker">
+            <img class="speaker_knap" src="apple_podcast.png" alt="speaker_svg">
+        </a>
+
     </article>
 
     <div class="baggrund">
