@@ -269,10 +269,9 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
 }
 
 
-.elementor-68 .elementor-element.elementor-element-a007e98 .elementor-heading-title {
-    color: #EF0032;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 44px;
-    font-weight: 800;
+.elementor-68 .elementor-element.elementor-element-a007e98 > .elementor-widget-container {
+    margin: 0px 1012px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    background-color: #FFFFFF;
     transform: rotate(18deg);
 }
