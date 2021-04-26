@@ -37,7 +37,7 @@ get_header(); ?>
     let aktuelpodcast = <?php echo get_the_ID() ?>;
 
 
-    const dbUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/podcast/" + aktuelpodcast;
+    const dbUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/episoder/" + aktuelpodcast;
     const episodeUrl = "http://pernillestrate.dk/radioLOUD/wordpress/wp-json/wp/v2/episoder?per_page=100";
 
     const container = document.querySelector("#episoder");

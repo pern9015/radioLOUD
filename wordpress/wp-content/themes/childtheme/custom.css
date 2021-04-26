@@ -3,22 +3,31 @@
 }
 
 nav#filtrering {
-    margin-left: 13vw;
+    /*    margin-left: 13vw;*/
+    text-align: center;
 }
 
 button.filter {
     background-color: #02163B;
     border-radius: 0px;
     margin-left: 10px;
-    padding: 13px 18px;
+    padding: 13px 5px;
+    background-color: #FEEFF2;
+    color: #02163B;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 21px;
 }
 
 button.filter:hover {
-    background: #FF0030;
+    cursor: pointer;
+    transform: scale(1.09);
+    transition: .5s ease;
+    color: red;
 }
 
-button.filter:active {
-    background: #FF0030;
+button.active {
+    color: red;
 }
 
 
@@ -36,10 +45,11 @@ img.billede {
 
 h1.type {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     margin-left: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: black;
 }
 
 .valgt {
@@ -89,14 +99,21 @@ input.search-submit {
     padding-left: 1px;
     margin-left: 167px;
     /* padding-bottom: 22vw; */
-    margin-top: -44px;
+    margin-top: -42px;
     margin-bottom: -80px;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     margin-right: -168px;
-    background-color: white;
+    background-color: #02163B;
+    color: white;
 }
 
+h3.titel {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
 
 
 
@@ -124,7 +141,7 @@ img.billede_single {
 
 h1.title_single {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -144,7 +161,7 @@ img.billede_episode {
 
 h2.flere_episoder {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     color: white;
     padding-top: 30px;
     margin-bottom: 30px;
@@ -223,4 +240,30 @@ div.sidebar-main {
     font-size: 40px;
     font-size: 2.6666666666667rem;
     color: white;
+}
+
+
+
+
+#live {
+    transform: rotate(18deg);
+    left: 271px;
+    top: 275px;
+}
+
+body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
+    left: 271px;
+    transform: rotate(18deg);
+}
+
+
+.elementor-128 .elementor-element.elementor-element-40cf79b {
+    top: 275px;
+}
+
+.elementor-128 .elementor-element.elementor-element-40cf79b > .elementor-widget-container {
+    margin: 0px 1034px 0px 20px;
+    padding: 0px 6px 0px 6px;
+    background-color: #EF0032;
+    transform: rotate(1deg);
 }

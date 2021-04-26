@@ -36,7 +36,7 @@ get_header(); ?>
     <main>
         <nav id="filtrering"></nav>
         <header>
-            <h1 class="type" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">Alle Podcasts</h1>
+            <h1 class="type" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">Alle</h1>
         </header>
 
 
@@ -77,8 +77,13 @@ get_header(); ?>
         }
 
         function opretKnapper() {
+
             categories.forEach(cat => {
-                document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+                if (cat.name == "Alle") {
+                    document.querySelector("#filtrering").innerHTML += `<button class="filter active" data-podcast="${cat.id}">${cat.name}</button>`
+                } else {
+                    document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
+                }
             })
 
             addEventListenersToButtons();
@@ -91,12 +96,18 @@ get_header(); ?>
         };
 
         function filtrering() {
+            document.querySelectorAll("#filtrering button").forEach(elm => {
+                elm.classList.remove("active")
+            });
             filterPodcast = this.dataset.podcast;
             console.log(filterPodcast);
 
             visPodcasts();
 
             header.textContent = this.textContent;
+
+
+            this.classList.add("active");
 
 
         }
