@@ -145,6 +145,8 @@ h1.title_single {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 25px;
+    color: #02163B;
+    text-transform: uppercase;
 }
 
 p.lang_beskrivelse_single {
