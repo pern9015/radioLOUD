@@ -228,23 +228,19 @@ h2.flere_episoder {
 
 /*knapper til tjenester*/
 
-a img .loud_knap {
-    height: 150px;
-    width: 150px;
-}
-
-    {
-    height: 150px;
-    width: 150px;
-}
-
-a img .loud_knap {
+img .loud .loud_knap {
     height: 150px;
     width: 150px;
 }
 
 
-a img .apple_knap {
+img .spotify .spotify_knap {
+    height: 150px;
+    width: 150px;
+}
+
+
+img .apple .apple_knap {
     height: 150px;
     width: 150px;
 }
