@@ -154,7 +154,7 @@ p.lang_beskrivelse_single {
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 40px;
-    font-size: 1.5rem;
+    font-size: 18px;
     text-align: center;
     color: black;
 }
@@ -291,9 +291,37 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
 }
 
 
-.elementor-68 .elementor-element.elementor-element-a007e98 > .elementor-widget-container {
-    margin: 0px 1012px 0px 0px;
-    padding: 0px 0px 0px 10px;
+.elementor-68 .elementor-element.elementor-element-95e054b > .elementor-widget-container {
+    margin: 0px 1031px 0px 0px;
+    padding: 0px 0px 0px 08px;
     background-color: #FFFFFF;
     transform: rotate(18deg);
+}
+
+
+/* NAVIGATION */
+.ast-desktop .ast-menu-hover-style-zoom > .menu-item > .menu-link:hover {
+    color: #db0038;
+}
+
+.ast-header-social-1-wrap .ast-social-color-type-custom .ast-builder-social-element:hover svg {
+    transition: all .3s ease;
+    transform: scale(1.2);
+    color: #db0038;
+}
+
+
+/* FOOTER */
+.widget-title {
+    font-weight: 800;
+}
+
+.ast-footer-social-1-wrap .ast-social-color-type-custom .ast-builder-social-element:hover svg {
+    transition: all .3s ease;
+    transform: scale(1.07);
+}
+
+
+.footer-widget-area[data-section="sidebar-widgets-footer-widget-2"].footer-widget-area-inner a:hover {
+    font-weight: 700;
 }

@@ -20,21 +20,23 @@ get_header(); ?>
     font-weight: 900;"></h1>
         <p class="lang_beskrivelse_single"></p>
 
+        <!--
         <div class="loud">
-            <img class="loud_knap" src="loud_logo.jpeg" alt="loud_svg">
+            <img class="loud_knap" src="assets/images/loud_logo.jpeg" alt="loud_svg">
         </div>
 
         <div class="spotify">
-            <img class="spotify_knap" src="spotify.png" alt="spotify_svg">
+            <img class="spotify_knap" src="assets/images/spotify.png" alt="spotify_svg">
         </div>
 
         <div class="apple">
-            <img class="apple_knap" src="apple_podcast.png" alt="apple_svg">
+            <img class="apple_knap" src="assets/images/apple_podcast.png" alt="apple_svg">
         </div>
 
         <div class="speaker">
-            <img class="speaker_knap" src="apple_podcast.png" alt="speaker_svg">
+            <img class="speaker_knap" src="assets/images/apple_podcast.png" alt="speaker_svg">
         </div>
+-->
 
     </article>
 
