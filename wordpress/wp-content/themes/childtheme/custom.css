@@ -267,11 +267,7 @@ div.sidebar-main {
 
 
 
-#live {
-    transform: rotate(18deg);
-    left: 271px;
-    top: 275px;
-}
+
 
 body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
     left: 271px;
@@ -283,13 +279,6 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
     top: 275px;
 }
 
-.elementor-128 .elementor-element.elementor-element-40cf79b > .elementor-widget-container {
-    margin: 0px 1034px 0px 20px;
-    padding: 0px 6px 0px 6px;
-    background-color: #EF0032;
-    transform: rotate(1deg);
-}
-
 
 .elementor-68 .elementor-element.elementor-element-95e054b > .elementor-widget-container {
     margin: 0px 1031px 0px 0px;
@@ -298,6 +287,18 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
     transform: rotate(18deg);
 }
 
+.elementor-128 .elementor-element.elementor-element-40cf79b > .elementor-widget-container {
+    margin: 0px 390px 0px 20px;
+    padding: 0px 6px 0px 6px;
+    background-color: #EF0032;
+    transform: rotate(1deg);
+}
+
+#live {
+    transform: rotate(18deg);
+    left: -34px;
+    top: 175px;
+}
 
 /* NAVIGATION */
 .ast-desktop .ast-menu-hover-style-zoom > .menu-item > .menu-link:hover {
@@ -309,6 +310,8 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
     transform: scale(1.2);
     color: #db0038;
 }
+
+
 
 
 /* FOOTER */
