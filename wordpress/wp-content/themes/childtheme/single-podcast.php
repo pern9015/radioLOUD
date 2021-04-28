@@ -20,25 +20,24 @@ get_header(); ?>
     font-weight: 900;"></h1>
         <p class="lang_beskrivelse_single"></p>
 
-
         <div class="loud">
-            <img class="loud_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
+            <img class="loud_knap" src="assets/images/loud_logo.jpeg" alt="loud_svg">
         </div>
 
         <div class="spotify">
-            <img class="spotify_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
+            <img class="spotify_knap" src="assets/images/spotify.png" alt="spotify_svg">
         </div>
 
         <div class="apple">
-            <img class="apple_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
+            <img class="apple_knap" src="assets/images/apple_podcast.png" alt="apple_svg">
         </div>
-        <!--
 
-        <div class="speaker">
-            <img class="speaker_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="speaker_svg">
+        <div class="google">
+            <img class="google_knap" src="assets/images/logo_podcasts_google.png" alt="google_svg">
         </div>
--->
-
+        <div class="google">
+            <img class="google_knap" src="assets/images/podimo_logo.png" alt="podimo_svg">
+        </div>
 
     </article>
 
