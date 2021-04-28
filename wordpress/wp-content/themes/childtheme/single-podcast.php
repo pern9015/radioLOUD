@@ -21,22 +21,29 @@ get_header(); ?>
         <p class="lang_beskrivelse_single"></p>
 
         <section class="streaming_section">
-            <div class="streaming">
-                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
-            </div>
+            <a href="https://www.spotify.com/dk-en/">
+                <div class="streaming">
+                    <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
+                </div>
+            </a>
 
-            <div class="streaming">
-                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
+            <a href="https://www.apple.com/itunes/">
+                <div class="streaming">
+                    <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
+                </div>
+            </a>
 
-            </div>
+            <a href="https://podimo.com/dk/">
+                <div class="streaming">
+                    <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/podimo.png" alt="podimo_svg">
+                </div>
+            </a>
 
-            <div class="streaming">
-                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
-            </div>
-
-            <div class="streaming">
-                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/podcasts_512dp.png" alt="google_svg">
-            </div>
+            <a href="https://podcasts.google.com">
+                <div class="streaming">
+                    <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/podcasts_512dp.png" alt="google_svg">
+                </div>
+            </a>
 
         </section>
     </article>

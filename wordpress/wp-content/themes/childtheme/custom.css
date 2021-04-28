@@ -164,6 +164,12 @@ img.billede_episode {
     width: 350px;
 }
 
+img.billede_episode:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .5s ease;
+}
+
 h2.flere_episoder {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -333,6 +339,12 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
 img.streaming {
     max-height: 50px;
     max-width: 50px;
+}
+
+img.streaming:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .5s ease;
 }
 
 .streaming_section {
