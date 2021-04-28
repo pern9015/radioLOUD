@@ -22,15 +22,15 @@ get_header(); ?>
 
 
         <div class="loud">
-            <img class="loud_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
+            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
         </div>
 
         <div class="spotify">
-            <img class="spotify_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
+            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
         </div>
 
         <div class="apple">
-            <img class="apple_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
+            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
         </div>
         <!--
 
