@@ -328,3 +328,18 @@ body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
 .footer-widget-area[data-section="sidebar-widgets-footer-widget-2"].footer-widget-area-inner a:hover {
     font-weight: 700;
 }
+
+
+img.streaming {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.streaming_section {
+    margin-left: 30vw;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-gap: 10px;
+    text-align: center;
+}

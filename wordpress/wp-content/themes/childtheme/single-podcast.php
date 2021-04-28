@@ -20,26 +20,25 @@ get_header(); ?>
     font-weight: 900;"></h1>
         <p class="lang_beskrivelse_single"></p>
 
+        <section class="streaming_section">
+            <div class="streaming">
+                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
+            </div>
 
-        <div class="loud">
-            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
-        </div>
+            <div class="streaming">
+                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
 
-        <div class="spotify">
-            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/spotify.png" alt="spotify_svg">
-        </div>
+            </div>
 
-        <div class="apple">
-            <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="apple_svg">
-        </div>
-        <!--
+            <div class="streaming">
+                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/loud_logo.png" alt="loud_svg">
+            </div>
 
-        <div class="speaker">
-            <img class="speaker_knap" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/apple_podcast.png" alt="speaker_svg">
-        </div>
--->
+            <div class="streaming">
+                <img class="streaming" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/podcasts_512dp.png" alt="google_svg">
+            </div>
 
-
+        </section>
     </article>
 
     <div class="baggrund">
