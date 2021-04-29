@@ -273,8 +273,6 @@ div.sidebar-main {
 
 
 
-
-
 body:not(.rtl) .elementor-128 .elementor-element.elementor-element-40cf79b {
     left: 271px;
     transform: rotate(18deg);
@@ -354,4 +352,23 @@ img.streaming:hover {
     grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
     grid-gap: 10px;
     text-align: center;
+}
+
+.baggrund_episode {
+    background-color: #02163B;
+    border-radius: 0px;
+    margin-left: -120px;
+    margin-right: -140px;
+    padding-left: 150px;
+    padding-right: 100px;
+    color: white;
+    margin-top: -30px;
+    padding-top: 120px;
+}
+
+#episoder_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+    color: white;
 }
