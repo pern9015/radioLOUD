@@ -41,8 +41,7 @@ get_header(); ?>
         </header>
 
 
-        <section id="liste" class="podcastcontainer" style="display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;margin: 0px 200px;"></section>
+        <section id="liste" class="podcastcontainer"></section>
 
 
 
