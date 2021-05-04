@@ -28,6 +28,7 @@ get_header(); ?>
     </div><!-- #primary -->
 
     <head>
+        <meta name="description" content="Dette er et redesign af RadioLOUD´s hjemmeside">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
 

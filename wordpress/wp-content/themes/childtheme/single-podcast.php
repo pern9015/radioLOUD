@@ -14,8 +14,7 @@ get_header(); ?>
     </section>
     <article class="radio" id="podcasts">
         <img src="" alt="" class="lydbolge">
-        <img src="" alt="" class="billede_single" style="height: 500px;
-    width: 500px;">
+        <img src="" alt="" class="billede_single">
         <h1 class="title_single" style="font-family: 'Montserrat', sans-serif;
     font-weight: 900;"></h1>
         <p class="lang_beskrivelse_single"></p>
